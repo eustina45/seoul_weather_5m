@@ -11,7 +11,7 @@ jobs: # 실행할 작업을 정의
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v3 # 현재 github 저장소를 가져온다
-        with: 같이 진행할 작업
+        with: # 같이 진행할 작업
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Python 설정
         uses: actions/setup-python@v4
